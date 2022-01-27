@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPosts } from "./action";
+import { fetchUsers } from "./action";
 import './app/App.css';
 
 function Posts() {
@@ -8,7 +8,7 @@ function Posts() {
   const posts = useSelector((state) => state);
 
   useEffect(() => {
-    dispatch(fetchPosts());
+    dispatch(fetchUsers());
   }, [dispatch]);
 
   //initialize variables

@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import Posts from './Posts';
+import UserForm from "./pages/User";
+//import Posts from './Posts';
 
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
   const dispatch = useDispatch()
   return (
     <div>
-      <h1><Posts /></h1>    
+      <UserForm /> 
+      {/* <h1><Posts /></h1>     */}
     </div>
   );
 };
